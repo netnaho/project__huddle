@@ -1,0 +1,17 @@
+:root{
+    --color-primary: #ff52bf;
+    --color-secondary: #00252e;
+    --color-accent: #808d99;
+    --color-neutral: #ebfbff;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+    max-width: 510px;
+}
