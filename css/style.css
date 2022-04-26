@@ -5,15 +5,13 @@
     --color-neutral: #ebfbff;
 }
 
-*,
-*::after,
-*::before {
-  box-sizing: border-box;
-}
+
 
 img {
     width: 100%;
-    max-width: 510px;
+    max-width: 570px;
+    object-fit: contain;
+    
 }
 
 /* Typography */
@@ -23,7 +21,8 @@ html {
 
 body{
     font-size: 1.8rem;
-    font-size: 'Open Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.5;
 }
 
 h1,
@@ -32,7 +31,7 @@ h2 {
 }
 
 h1 {
-    font-size: 3.7rem;
+    font-size: 4.3rem;
 }
 
 h2 {
@@ -76,22 +75,23 @@ h2 {
     outline: 0;
     border: 0;
     border-radius: 35px;
+    white-space: nowrap;
 }
 
 .btn--white{
-    padding: 1.2rem 4.3rem;
-    background: whitesmoke;
-    box-shadow: 4px -2px 50px 0 rgb(82, 81, 81);
+    padding: 1.2rem 3rem;
+    background: rgb(255, 255, 255);
+    box-shadow: 0 0 20px 0 rgb(209, 205, 205);
     color: black;
 }
 .btn--white:hover{
-    background: rgb(230, 224, 224);
-    color: rgb(83, 70, 70);
+    background: rgb(243, 243, 243);
+    color: rgb(87, 76, 76);
 }
 
 .btn--pink{
     font-size: 1.7rem;
-    padding: 2.2rem 6.3rem;
+    padding: 1.7rem 5.3rem;
     background: var(--color-primary);
     box-shadow: 4px -2px 50px 0 rgb(192, 185, 185);
     color: #fff;
@@ -105,6 +105,89 @@ h2 {
      padding: 0;
      list-style-type: none;
  }
+ 
+ /* Containers */
+ .container {
+     max-width: 1140px;
+     margin: 0 auto;
+ }
+
+ /* Header */
+ .header {
+   background-color: var(--color-neutral);
+   background-image: url(../images/bg-hero-mobile.svg);
+   background-size: cover;
+   background-repeat: no-repeat;
+   padding: 0 3rem;
+   
+   
+ }
+ .header__nav {
+     height: 100px;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     
+}
+
+.header__hero {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5rem;
+    margin-top: 3rem;
+    
+}
+
+.hero__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 20px;
+}
+
+.hero__heading {
+    letter-spacing: -1px;
+    line-height: 1.3;
+    margin: 0;
+    margin-top: 2rem;
+}
+
+.hero__description {
+    font-size: 2.3rem;
+}
+
+.hero__img {
+   margin: 0 auto;
+   margin-bottom: 2rem;
+}
+
+.nav__logo{
+     width: 160px;
+     height: 26px;
+     object-fit: contain;
+}
+
+@media screen and (min-width: 900px) {
+    .header {
+        background-image: url(../images/bg-hero-desktop.svg);
+    }
+    .header__hero {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+       
+    }
+
+    .hero__content {
+        text-align: left;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    .hero__img{
+        justify-self: flex-start;
+    }
+}
 
 
 
