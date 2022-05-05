@@ -29,8 +29,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://github.com/netnaho/project__huddle.git](https://github.com/netnaho/project__huddle.git)
+- Live Site URL: [https://netnaho.github.io/project__huddle/](https://netnaho.github.io/project__huddle/)
 
 ## My process
 
